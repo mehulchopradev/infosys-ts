@@ -1,3 +1,4 @@
+// module
 export {};
 
 // always advisable to declare data types for parameters and return value of a function
