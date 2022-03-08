@@ -13,7 +13,7 @@ const marks = 90;
 type Student = {
   name: string,
   gender: string,
-  roll: number,
+  readonly roll: number,
   marks: number,
   address?: string, // optional properties
 };
@@ -28,6 +28,9 @@ const s1: Student = {
   marks: 90,
   address: 'dfkjgndfkg',
 }; // object
+
+console.log(s1.roll);
+// s1.roll = 90; // is readonly. Will not work
 
 const s2: Student = {
   name: 'jane',
@@ -52,7 +55,7 @@ console.log(s2.name, s2.roll);
 
 // modify object attributes
 s1.marks = 95;
-s2.roll = 13;
+// s2.roll = 13; // will not work as roll is readonly
 
 console.log(s1, s2);
 
