@@ -1,4 +1,4 @@
-// module
+// es6 module
 
 type Stats = {
   length: number,
@@ -25,3 +25,9 @@ export {
   perimeterRectangle,
   areaRectangle,
 };
+
+// default export
+// there can be only one default export in a file
+export default Stats;
+
+// export default areaRectangle; // will not work

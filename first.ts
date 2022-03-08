@@ -80,3 +80,11 @@ console.log(studentName);
 console.log(rollNo);
 console.log(gender);
 console.log(studentMarks);
+
+// union type
+let rt: number | string;
+
+rt = 9;
+rt = 'mehul';
+
+// rt = []; // will not work

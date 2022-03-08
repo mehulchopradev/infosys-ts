@@ -81,3 +81,12 @@ const c2: string[] = ['i10', 'i20'];
 
 const c3 = [...c1, ...c2];
 console.log(c3);
+
+// union types
+function concat(x: number|string, y: number|string) {
+}
+
+concat(5, 4);
+concat('mehul', 'chopra');
+concat('mehul', 25);
+// concat(true, []); // will not work
