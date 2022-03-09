@@ -21,6 +21,7 @@ export default class Student extends CollegeUser {
   // override the method
   // redefine the method
   getDetails() {
+    console.log(this.name);
     return `${super.getDetails()}\nRoll: ${this.roll}`;
   }
 }

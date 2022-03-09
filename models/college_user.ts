@@ -2,8 +2,8 @@ import { Gender } from "../types/gender";
 
 export default class CollegeUser {
 
-  // object attributes
-  name: string = '';
+  // object attributes (default public)
+  protected name: string = '';
   gender: Gender = 'm'; 
 
   constructor(name: string, gender: Gender) {
@@ -12,6 +12,7 @@ export default class CollegeUser {
     this.gender = gender;
   }
 
+  // 
   getDetails() {
     // this -> current object Student / Professor / subclass CollegeUser
     return `Name: ${this.name}\nGender: ${this.gender}`;

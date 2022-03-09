@@ -15,6 +15,8 @@ const p1 = new Professor('jane', 'f', ['Physics'], 3000, 15);
 
 // console.log(s1, p1);
 
+// console.log(s1.name); // will not work as it is marked as protected
+
 console.log(s1.getDetails());
 
 console.log(p1.getDetails());
